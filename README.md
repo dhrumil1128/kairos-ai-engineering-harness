@@ -32,7 +32,7 @@
       </td>
       <td width="50%" align="center">
         <b>Native OS Desktop & Browser Automation</b><br/><br/>
-        <img src="assetes/demo-img 2.jpg" alt="Desktop Automation Demo" width="100%" />
+        <img src="assetes/Demo-img 2" alt="Desktop Automation Demo" width="100%" />
       </td>
     </tr>
     <tr>
