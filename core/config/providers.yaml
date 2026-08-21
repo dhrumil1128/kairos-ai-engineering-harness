@@ -1,0 +1,151 @@
+# ============================================================
+# File: config/providers.yaml
+#
+# Purpose:
+# Central provider configuration for KAIROS.
+#
+# Why:
+# - Store API keys outside source code
+# - Support multiple providers
+# - Enable model routing
+# - Avoid vendor lock-in
+#
+# Architecture:
+#
+# Provider Config
+#        ↓
+# Provider Manager
+#        ↓
+# Model Router
+#        ↓
+# Agents
+#
+# Security Note:
+# Never commit real API keys to GitHub.
+#
+# Use:
+# .env
+# Secret Manager
+# Vault
+# AWS Secrets Manager
+# Azure Key Vault
+#
+# ============================================================
+
+providers:
+
+  # ----------------------------------------------------------
+  # OpenAI
+  # ----------------------------------------------------------
+  openai:
+    enabled: true
+    api_key: ""
+    default_model: "gpt-5"
+    embedding_model: "text-embedding-3-large"
+
+  # ----------------------------------------------------------
+  # Anthropic Claude
+  # ----------------------------------------------------------
+  anthropic:
+    enabled: true
+    api_key: ""
+    default_model: "claude-opus"
+
+  # ----------------------------------------------------------
+  # Google Gemini
+  # ----------------------------------------------------------
+  google:
+    enabled: true
+    api_key: ""
+    default_model: "gemini-pro"
+
+  # ----------------------------------------------------------
+  # Groq
+  # ----------------------------------------------------------
+  groq:
+    enabled: false
+    api_key: ""
+    default_model: "llama-4"
+
+  # ----------------------------------------------------------
+  # OpenRouter
+  # ----------------------------------------------------------
+  openrouter:
+    enabled: false
+    api_key: ""
+    default_model: "auto"
+
+  # ----------------------------------------------------------
+  # Ollama (Local Models)
+  # ----------------------------------------------------------
+  ollama:
+    enabled: true
+    endpoint: "http://localhost:11434"
+
+    models:
+      - qwen3
+      - deepseek-r1
+      - llama3
+      - mistral
+      - gemma
+
+  # ----------------------------------------------------------
+  # vLLM
+  # ----------------------------------------------------------
+  vllm:
+    enabled: false
+    endpoint: ""
+
+  # ----------------------------------------------------------
+  # LM Studio
+  # ----------------------------------------------------------
+  lmstudio:
+    enabled: false
+    endpoint: ""
+
+# ============================================================
+# Routing Preferences
+# ============================================================
+
+routing:
+
+  summary: "gemini-pro"
+
+  coding: "gpt-5"
+
+  architecture: "claude-opus"
+
+  embedding: "qwen3"
+
+  research: "claude-opus"
+
+# ============================================================
+# Cost Optimization Rules
+# ============================================================
+
+cost_optimization:
+
+  enabled: true
+
+  prefer_local_models: true
+
+  fallback_to_cloud: true
+
+# ============================================================
+# Failover Rules
+# ============================================================
+
+failover:
+
+  enabled: true
+
+  order:
+    - openai
+    - anthropic
+    - google
+    - groq
+    - ollama
+
+# ============================================================
+# End of File
+# ============================================================
