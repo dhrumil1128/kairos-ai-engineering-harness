@@ -706,14 +706,6 @@ This project is licensed under the **GNU Affero General Public License v3.0** ‚Ä
 
 ---
 
-<div align="center">
-
-  ### ‚≠ê Star History
-
-  [![Star History Chart](https://api.star-history.com/svg?repos=dhrumil1128/KAIROS&type=Date)](https://star-history.com/#dhrumil1128/KAIROS&Date)
-
-  <br/>
-
   <sub>Built with precision and passion for autonomous software engineering.</sub>
 
 </div>
