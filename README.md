@@ -28,7 +28,7 @@
     <tr>
       <td width="50%" align="center">
         <b>Interactive CLI REPL Engine</b><br/><br/>
-        <img src=assetes/Demo Img.jpg" alt="KAIROS CLI Demo" width="100%" />
+        <img src="assets/demo-img.jpg" alt="KAIROS CLI Demo" width="100%" />
       </td>
       <td width="50%" align="center">
         <b>Native OS Desktop & Browser Automation</b><br/><br/>
