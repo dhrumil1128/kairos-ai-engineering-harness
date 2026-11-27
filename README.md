@@ -568,18 +568,6 @@ while attempt < max_retries:
 
 ---
 
-## 🗺️ Project Roadmap
-
-| Phase | Status | Core Enhancements |
-|---|---|---|
-| **V1.0 (Current)** | ✅ Delivered | Multi-agent generation pipeline, deterministic scaffolding, bounded `RepairLoop`, subprocess `SandboxExecutor`, dual-mode OS automation CLI. |
-| **V2.0** | 🚧 In Progress | Ephemeral Docker container sandbox isolation, expanded MCP protocol bindings (Docker, Database, GitHub). |
-| **V3.0** | 📅 Planned | Parallel generation of independent modules (`parallel_executor.py`), persistent SQLite/vector memory. |
-| **V4.0** | 📅 Planned | User-defined YAML framework templates, cost-aware dynamic LLM provider routing. |
-| **V5.0** | 📅 Planned | Semantic vector context search (ChromaDB / Qdrant), AST-guided automated patch application. |
-| **V6.0** | 📅 Planned | Vision Language Model (VLM) screenshot analysis for desktop UI control. |
-
----
 
 ## 📚 Documentation
 
@@ -590,22 +578,6 @@ For complete specifications, architectural diagrams, data flows, and subsystem A
 - 📐 **[Architecture Specifications](kairos_v1_engineering_design_document.md#7-high-level-architecture)** — Tier definitions & component diagrams.
 
 ---
-
-## 📊 Benchmarks & System Metrics
-
-Empirical metrics measured during V1 execution testing:
-
-| Metric | Measured Value | Standard LLM Baseline |
-|---|---|---|
-| **CLI Memory Footprint** | `~45 MB` | N/A |
-| **PyQt6 Desktop GUI Memory** | `~120 MB` | N/A |
-| **Directory Scaffolding Accuracy** | **100% Deterministic** | ~62% (Hallucinated paths) |
-| **Multi-File Signature Consistency** | **98.4%** | ~41% (Import mismatches) |
-| **Sandbox Verification Time Cap** | **30.0s Hard Cap** | Unbounded |
-| **Self-Healing Recovery Rate** | **84.2%** (within 3 retries) | 0% (No auto-repair) |
-
----
-
 ## 🛠️ Tech Stack
 
 <div align="center">
