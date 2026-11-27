@@ -8,7 +8,7 @@
 
   [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
   [![License](https://img.shields.io/badge/License-AGPL--3.0-blue.svg?style=for-the-badge)](LICENSE)
-  [![Version](https://img.shields.io/badge/Version-1.0.0--PROD-green.svg?style=for-the-badge)](kairos_v1_engineering_design_document.md)
+  [![Version](https://img.shields.io/badge/Version-1.0.0-Beta-green.svg?style=for-the-badge)](kairos_v1_engineering_design_document.md)
   [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-informational?style=for-the-badge)](https://github.com/dhrumil1128/KAIROS)
   [![Status](https://img.shields.io/badge/Status-Active%20Production-success?style=for-the-badge)](kairos_v1_engineering_design_document.md)
   [![Build](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)](#installation)
