@@ -8,10 +8,10 @@
 
   [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
   [![License](https://img.shields.io/badge/License-AGPL--3.0-blue.svg?style=for-the-badge)](LICENSE)
-  [![Version](https://img.shields.io/badge/Version-1.0.0-Beta-green.svg?style=for-the-badge)](kairos_v1_engineering_design_document.md)
-  [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-informational?style=for-the-badge)](https://github.com/dhrumil1128/KAIROS)
-  [![Status](https://img.shields.io/badge/Status-Active%20Production-success?style=for-the-badge)](kairos_v1_engineering_design_document.md)
-  [![Build](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)](#installation)
+  [![Version](https://img.shields.io/badge/Version-1.0.0--Beta-orange.svg?style=for-the-badge)](kairos_v1_engineering_design_document.md)
+  [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-informational?style=for-the-badge)](https://github.com/dhrumil1128/kairos-ai-engineering-harness)
+  [![Status](https://img.shields.io/badge/Status-Experimental-yellow.svg?style=for-the-badge)](kairos_v1_engineering_design_document.md)
+  [![Tests](https://img.shields.io/badge/Tests-pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)](#installation)
  
   <br />
 
@@ -342,8 +342,8 @@ KAIROS/
 #### 1. Clone Repository
 
 ```bash
-git clone https://github.com/dhrumil1128/KAIROS.git
-cd KAIROS
+git clone https://github.com/dhrumil1128/kairos-ai-engineering-harness.git
+cd kairos-ai-engineering-harness
 ```
 
 #### 2. Configure Virtual Environment
@@ -642,15 +642,18 @@ KAIROS executes local shell commands and controls host desktop windows. Safety g
 1. **`SecurityGuard` (`core/security/security_guard.py`)**: Screens command strings against malicious command patterns (e.g., destructive disk formatting or unauthorized system modifications).
 2. **`DesktopPolicy` (`core/security/desktop_policy.py`)**: Evaluates window titles and application names before allowing window focus or keystroke dispatch.
 
+
 ### Responsible Disclosure
 
-If you discover a security vulnerability in KAIROS, please send an email to security@kairos-ai.org or open a confidential security advisory on GitHub.
+If you discover a security vulnerability in KAIROS, please report it privately
+using GitHub's "Report a vulnerability" option in the repository's Security tab.
+Please do not open a public issue for security problems.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **GNU Affero General Public License v3.0** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **GNU Affero General Public License v3.0** see the [LICENSE](LICENSE) file for details.
 
 ---
 
